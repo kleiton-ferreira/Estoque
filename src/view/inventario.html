@@ -1,0 +1,54 @@
+<!--inventario.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyStock - Estoque</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../img/logo_2.png" type="image/x-icon">
+    
+</head>
+<body>
+    <div class="container">
+        <span class="title"><b><h1>EasyStock</h1></b></span>
+        <button id="logout-button">Logout</button> <!-- Botão de Logout -->
+        <br><br>
+        <div id="alert-container"></div> <!-- Container for alerts -->
+        <div class="form-container">
+            <input type="text" id="product-name" placeholder="Nome do Produto">
+            <input type="number" id="product-quantity" placeholder="Quantidade">
+            <input type="number" id="product-price" placeholder="Preço (R$)">
+            <button id="add-product">Adicionar Produto</button>
+        </div>
+        <input type="text" id="search-bar" placeholder="Buscar pelo nome"> <br><br>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome do Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço (R$)</th>
+                        <th>Valor Total (R$)</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="product-list">
+                    <!-- Products will be added here -->
+                </tbody>
+            </table>
+        </div>
+        <button id="generate-report">Relatório</button> <!-- Button to generate report -->    
+        
+        <!-- Botão de Contato no canto inferior direito -->
+        <button id="contact-button">Contato</button>
+    </div>
+
+    <script src="../js/inventario.js"></script>
+    <script src="../js/contato.js"></script>
+
+</body>
+</html>
