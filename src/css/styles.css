@@ -23,6 +23,52 @@ body {
     width: 80%;
     max-width: 800px;
     overflow: hidden;
+    position: relative; /* Necessário para o posicionamento absoluto dos botões */
+}
+
+/* Posicionamento do contêiner de botões */
+.top-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px; /* Espaço entre os botões */
+}
+
+/* Estilos para os botões */
+#logout-button, #generate-report, #contact-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#logout-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#logout-button:hover {
+    background-color: #c82333;
+}
+
+#generate-report {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#generate-report:hover {
+    background-color: #1b722f;
+}
+
+#contact-button {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+#contact-button:hover {
+    background-color: #0056b3;
 }
 
 h1 {
@@ -131,45 +177,6 @@ table td button:hover {
     background-color: #c82333;
 }
 
-
-
-/* Estilos para o Botão */
-
-
-#logout-button, #generate-report, #contact-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 15px;
-    position:fixed; /* Posiciona os botões de forma absoluta */
-}
-
-/* Posiciona os botões no canto superior direito */
-#logout-button {
-    background-color: #dc3545;
-    color: #fff;
-    top: 130px; /* Distância do topo */
-    right: 280px; /* Distância do lado direito */
-}
-
-#generate-report {
-    background-color: #28a745;
-    color: #fff;
-    top: 130px; /* Distância do topo */
-    right: 495px; /* Ajuste para ficar ao lado do #logout-button */
-}
-
-#contact-button {
-    background-color: #007BFF;
-    color: #fff;
-    top: 130px; /* Distância do topo */
-    right: 380px; /* Ajuste para ficar ao lado do #generate-report */
-}
-
-
 /*Estilos pagina Contato*/
 
 /* Estilo do formulário */
@@ -181,11 +188,11 @@ table td button:hover {
     width: 100%;
     max-width: 600px; /* Aumenta a largura máxima do formulário */
     text-align: center;
-  }
-  
-  /* Estilos adicionais do formulário de contato */
-  .card-contato input, 
-  .card-contato textarea {
+}
+
+/* Estilos adicionais do formulário de contato */
+.card-contato input, 
+.card-contato textarea {
     padding: 15px; /* Aumenta o padding para os campos */
     margin-bottom: 15px;
     border: 1px solid #ddd;
@@ -194,14 +201,13 @@ table td button:hover {
     color: #5a5a5a; /* Cor do texto */
     width: 100%; /* Campos ocupam toda a largura disponível */
     box-sizing: border-box; /* Inclui padding e border na largura total */
-  }
-  
-  .card-contato input:focus, 
-  .card-contato textarea:focus {
+}
+
+.card-contato input:focus, 
+.card-contato textarea:focus {
     border-color: #007bff; /* Cor de destaque quando focado */
     outline: none;
-  }
-  
+}
 
 .btn {
     padding: 10px 20px;
@@ -212,17 +218,26 @@ table td button:hover {
     text-align: center;
     text-decoration: none; /* Remove o sublinhado */
 }
+
 .btn-secondary {
     background-color: #dc3545;
     color: #fff;
 }
+
+.btn-secondary:hover {
+    background-color: #c82333;
+}
+
 .btn-primary {
     background-color: #007BFF;
     color: #fff;
 }
 
+.btn-primary:hover {
+    background-color: #0056b3;
+}
 
-/*Stilo para Enviados*/
+/*Etilo para Enviados*/
 
 .container-enviado {
     background-color: white;
@@ -250,4 +265,117 @@ table td button:hover {
 
 #enviado-button:hover {
     background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+
+
+/* Responsividade para telas menores */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .top-buttons {
+        position: static;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .top-buttons button {
+        padding: 8px 16px; /* Botões mais compactos */
+        font-size: 14px; /* Fonte menor e proporcional */
+    }
+
+    .form-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-container input,
+    .form-container button {
+        width: 97%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .top-buttons button {
+        flex: 1 1 30%; /* Botões ocupam 30% da largura cada */
+        padding: 6px 12px; /* Botões ainda mais compactos */
+        font-size: 13px; /* Fonte ainda menor e mais proporcional */
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .form-container input,
+    .form-container button {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-buttons {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    .top-buttons button {
+        flex: 1 1 100%; /* Botões ocupam 100% da largura em telas muito pequenas */
+        padding: 6px 10px; /* Botões compactos */
+        font-size: 12px; /* Fonte reduzida para se ajustar ao espaço */
+        text-align: center;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .form-container {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .form-container input,
+    .form-container button {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+        text-align: center;
+    }
 }

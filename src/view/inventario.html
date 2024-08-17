@@ -13,7 +13,14 @@
 <body>
     <div class="container">
         <span class="title"><b><h1>EasyStock</h1></b></span>
-       
+        
+        <div class="top-buttons"> <!-- Adicionei esse div para agrupar os botões -->
+            <button id="generate-report">Relatório</button><!-- Button to generate report -->
+            <button id="contact-button">Contato</button> <!-- Botão de Contato  -->
+            <button id="logout-button">Logout</button><!-- Botão de Logout -->
+           
+        </div>
+        
         <br><br>
         <div id="alert-container"></div> <!-- Container for alerts -->
         <div class="form-container">
@@ -23,7 +30,7 @@
             <button id="add-product">Adicionar Produto</button>
         </div>
         <input type="text" id="search-bar" placeholder="Buscar pelo nome"> <br><br>
-
+    
         <div class="table-container">
             <table>
                 <thead>
@@ -41,13 +48,8 @@
                 </tbody>
             </table>
         </div>
-        
-            <button id="logout-button">Logout</button><!-- Botão de Logout -->
-            <button id="generate-report">Relatório</button><!-- Button to generate report -->    
-            <button id="contact-button">Contato</button> <!-- Botão de Contato  -->
-        
     </div>
-
+    
     <script src="../js/inventario.js"></script>
     <script src="../js/contato.js"></script>
 
