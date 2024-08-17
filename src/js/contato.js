@@ -5,3 +5,4 @@ const isAuthenticated = localStorage.getItem('email') !== null && localStorage.g
 if (!isAuthenticated) {
     window.location.href = './login.html';
 }
+

@@ -162,5 +162,5 @@ function searchProduct() {
 
 // Navegação para a página de contato
 document.getElementById('contact-button').addEventListener('click', () => {
-    window.location.href = './contato.html';
+    window.location.href = '../view/contato.html';
 });
