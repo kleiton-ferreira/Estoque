@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('role', role);
     
             alert('Registro feito com sucesso! Por favor, faça o login.');
-            window.location.href = '../view/login.html';
+            window.location.href = './view/login.html';
         });
     }
     
