@@ -21,7 +21,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     width: 80%;
-    max-width: 800px;
+    max-width: 1000px;
     overflow: hidden;
     position: relative; /* Necessário para o posicionamento absoluto dos botões */
 }
