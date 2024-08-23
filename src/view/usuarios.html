@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyStock - Usuários</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../img/logo_2.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <span class="title"><b><h1>EasyStock - Gerenciamento de Usuários</h1></b></span>
+
+        <div class="top-buttons">
+            <button id="generate-report" onclick="window.location.href='../index.html'">Logout</button><!-- Botão de Logout -->
+        </div>
+
+        <br><br>
+        <div id="alert-container"></div> <!-- Container for alerts -->
+
+        <div class="form-container">
+            <input type="text" id="user-name" placeholder="Nome de Usuário">
+            <input type="text" id="user-cpf" placeholder="CPF">
+            <input type="text" id="user-phone" placeholder="Telefone">
+            <input type="email" id="user-email" placeholder="Email">
+            <button id="add-user">Adicionar Usuário</button>
+        </div>
+
+        <input type="text" id="search-bar" placeholder="Buscar pelo nome"> <br><br>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="user-list">
+                    <!-- Users will be added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../js/usuarios.js"></script>
+</body>
+</html>
