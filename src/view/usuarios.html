@@ -12,7 +12,9 @@
         <span class="title"><b><h1>EasyStock - Gerenciamento de Usuários</h1></b></span>
 
         <div class="top-buttons">
-            <button id="generate-report" onclick="window.location.href='../index.html'">Logout</button><!-- Botão de Logout -->
+            <button id="inventory-button" onclick="window.location.href='inventario.html'">Estoque</button><!-- Botão de Logout -->
+            <button id="contact-button"onclick="window.location.href='contato.html'">Contato</button> <!-- Botão de Contato  -->
+            <button id="logout-button" onclick="window.location.href='../index.html'">Logout</button><!-- Botão de Logout -->
         </div>
 
         <br><br>
@@ -23,6 +25,7 @@
             <input type="text" id="user-cpf" placeholder="CPF">
             <input type="text" id="user-phone" placeholder="Telefone">
             <input type="email" id="user-email" placeholder="Email">
+            <input type="text" id="user-role" placeholder="Função"> <!-- Novo campo adicionado -->
             <button id="add-user">Adicionar Usuário</button>
         </div>
 
@@ -37,6 +40,7 @@
                         <th>CPF</th>
                         <th>Telefone</th>
                         <th>Email</th>
+                        <th>Função</th> <!-- Novo cabeçalho adicionado -->
                         <th>Ações</th>
                     </tr>
                 </thead>
@@ -48,5 +52,6 @@
     </div>
 
     <script src="../js/usuarios.js"></script>
+    <script src="../js/contato.js"></script>
 </body>
 </html>
