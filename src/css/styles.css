@@ -11,6 +11,11 @@ body {
     height: 100vh;
 }
 
+/*Remover Sublinhado dos Links*/
+a {
+    text-decoration: none;
+}
+
 .title h1 {
     color: #0056b3; /* Azul que você deseja */
 }
