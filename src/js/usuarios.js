@@ -8,8 +8,9 @@ function addUser() {
     const userCpf = document.getElementById('user-cpf').value;
     const userPhone = document.getElementById('user-phone').value;
     const userEmail = document.getElementById('user-email').value;
+    const userRole = document.getElementById('user-role').value;
 
-    if (userName === '' || userCpf === '' || userPhone === '' || userEmail === '') {
+    if (userName === '' || userCpf === '' || userPhone === '' || userEmail === '' || userRole === '') {
         alert('Por favor, preencha todos os campos.');
         return;
     }
@@ -23,6 +24,7 @@ function addUser() {
         <td>${userCpf}</td>
         <td>${userPhone}</td>
         <td>${userEmail}</td>
+        <td>${userRole}</td>
         <td>
             <button onclick="deleteUser(this)">Delete</button>
         </td>
@@ -36,6 +38,7 @@ function addUser() {
     document.getElementById('user-cpf').value = '';
     document.getElementById('user-phone').value = '';
     document.getElementById('user-email').value = '';
+    document.getElementById('user-role').value = '';
 
     updateAlert();
 }
@@ -83,8 +86,9 @@ function generateReport() {
         const userCpf = row.cells[2].textContent;
         const userPhone = row.cells[3].textContent;
         const userEmail = row.cells[4].textContent;
+        const userRole = row.cells[5].textContent;
 
-        reportData.push({ userId, userName, userCpf, userPhone, userEmail });
+        reportData.push({ userId, userName, userCpf, userPhone, userEmail, userRole });
     });
 
     localStorage.setItem('userReportData', JSON.stringify(reportData));

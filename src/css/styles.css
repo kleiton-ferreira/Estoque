@@ -11,6 +11,11 @@ body {
     height: 100vh;
 }
 
+/*Remover Sublinhado dos Links*/
+a {
+    text-decoration: none;
+}
+
 .title h1 {
     color: #0056b3; /* Azul que você deseja */
 }
@@ -32,12 +37,13 @@ body {
     top: 20px;
     right: 20px;
     display: flex;
-    gap: 10px; /* Espaço entre os botões */
+    gap: 5px; /* Espaço entre os botões */
 }
 
 /* Estilos para os botões */
-#logout-button, #generate-report, #contact-button {
-    padding: 10px 20px;
+#logout-button, #generate-report, #contact-button, 
+#inventory-button, #user-button {
+    padding: 5px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -54,12 +60,12 @@ body {
 }
 
 #generate-report {
-    background-color: #28a745;
+    background-color: #e6b000;
     color: #fff;
 }
 
 #generate-report:hover {
-    background-color: #1b722f;
+    background-color: #e69d00;
 }
 
 #contact-button {
@@ -70,6 +76,17 @@ body {
 #contact-button:hover {
     background-color: #0056b3;
 }
+
+
+#inventory-button, #user-button {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+#inventory-button:hover, #user-button:hover {
+    background-color: #0056b3;
+}
+
 
 h1 {
     text-align:left;
@@ -90,9 +107,10 @@ h1 {
     width: calc(100% / 3 - 20px);
 }
 
+/* Estilo para o botão de Adicionar*/
 .form-container button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #28a745;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -100,7 +118,7 @@ h1 {
 }
 
 .form-container button:hover {
-    background-color: #0056b3;
+    background-color: #218838;
 }
 
 .table-container {
@@ -177,14 +195,6 @@ table td button:hover {
     background-color: #c82333;
 }
 
-/*Estilo menu administrativo*/
-
-
-
-
-
-
-/*Estilos pagina Contato*/
 
 /* Estilo do formulário */
 .card-contato {
@@ -216,6 +226,8 @@ table td button:hover {
     outline: none;
 }
 
+/*Botões da página de Contato */
+
 .btn {
     padding: 10px 20px;
     border: none;
@@ -226,14 +238,6 @@ table td button:hover {
     text-decoration: none; /* Remove o sublinhado */
 }
 
-.btn-secondary {
-    background-color: #dc3545;
-    color: #fff;
-}
-
-.btn-secondary:hover {
-    background-color: #c82333;
-}
 
 .btn-primary {
     background-color: #007BFF;
@@ -242,6 +246,15 @@ table td button:hover {
 
 .btn-primary:hover {
     background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #747474;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #5c5c5c;
 }
 
 /*Etilo para Enviados*/
