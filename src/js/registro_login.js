@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (email === storedEmail && password === storedPassword && role === storedRole) {
                 if (storedRole === 'admin') {
-                    window.location.href = '../view/menu_administrativo.html';
+                    window.location.href = '../view/menu_adm.html';
                 } else {
                     window.location.href = '../view/usario.html';
                 }
