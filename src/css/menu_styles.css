@@ -29,11 +29,11 @@ body {
 
 /* Estilizando os botões do menu */
 .adm-buttons button {
-    background-color: #28a745; /* Verde vibrante */
+    background-color: #007BFF; /* Verde vibrante */
     border: none;
     color: white;
     padding: 15px 30px;
-    margin: 10px;
+    margin: 5px;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
@@ -41,7 +41,7 @@ body {
 }
 
 .adm-buttons button:hover {
-    background-color: #218838;
+    background-color: #0056b3;
 }
 
 /* Estilizando o botão de logout com uma cor diferente */

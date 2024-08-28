@@ -42,7 +42,7 @@ a {
 
 /* Estilos para os botões */
 #logout-button, #generate-report, #contact-button, 
-#inventory-button, #user-button {
+#inventory-button, #user-button, #client-button {
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
@@ -77,6 +77,15 @@ a {
     background-color: #0056b3;
 }
 
+
+#client-button {
+    background-color: #007BFF; 
+    color: #fff; 
+}
+
+#client-button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
 
 #inventory-button, #user-button {
     background-color: #007BFF;
@@ -120,6 +129,8 @@ h1 {
 .form-container button:hover {
     background-color: #218838;
 }
+
+
 
 .table-container {
     max-height: 300px; /* Altura máxima do container da tabela */
