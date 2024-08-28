@@ -1,4 +1,4 @@
-// recuperar_senha.js
+//estoque/src/js/recuperar_senha.js
 
 document.addEventListener('DOMContentLoaded', () => {
     const recoverForm = document.getElementById('recover-form');

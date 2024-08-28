@@ -1,4 +1,4 @@
-// contato.js
+//estoque/src/js/contato.js
 
 // Verificação de autenticação
 const isAuthenticated = localStorage.getItem('email') !== null && localStorage.getItem('senha') !== null;

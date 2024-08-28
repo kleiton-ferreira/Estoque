@@ -1,4 +1,4 @@
-//relatorio.js
+//estoque/src/js/relatorio.js
 
 document.addEventListener('DOMContentLoaded', () => {
     const reportData = JSON.parse(localStorage.getItem('reportData'));

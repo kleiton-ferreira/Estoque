@@ -1,3 +1,5 @@
+//estoque/src/js/usuarios.js
+
 let userId = 1; // Variável global para armazenar o próximo ID do usuário
 
 document.getElementById('add-user').addEventListener('click', addUser);

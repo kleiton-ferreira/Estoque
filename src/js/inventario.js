@@ -1,3 +1,5 @@
+//estoque/src/js/inventario.js
+
 let productId = 1; // Variável global para armazenar o próximo ID do produto
 
 document.getElementById('add-product').addEventListener('click', addProduct);

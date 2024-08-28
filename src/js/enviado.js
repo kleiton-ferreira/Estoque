@@ -1,4 +1,4 @@
-//enviado.js
+//estoque/src/js/enviado.js
 
 // Apos enviado 
 document.getElementById('enviado-button').addEventListener('click', function() {

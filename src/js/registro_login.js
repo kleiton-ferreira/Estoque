@@ -1,4 +1,4 @@
-//registro_login.js
+//estoque/src/js/registro_login.js
 
 document.addEventListener('DOMContentLoaded', () => {
     const loginForm = document.getElementById('login-form');
