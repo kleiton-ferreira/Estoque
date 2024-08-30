@@ -15,6 +15,10 @@ body {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .form-container {
@@ -24,10 +28,14 @@ body {
     border-radius: 10px;
     text-align: center;
     position: relative; /* Necessário para o posicionamento dos botões */
+    width: 100%;
+    max-height: 100%; /* Utiliza a altura máxima disponível */
+    display: flex;
+    flex-direction: column;
 }
 
 .form-container img {
-    width: 170px; /* Logo-Aumentado de 100px para 150px */
+    width: 170px; /* Logomarca */
     margin-bottom: 20px;
     display: block;
     margin: 0 auto;
@@ -37,8 +45,16 @@ body {
     color: #333;
 }
 
+form {
+    flex: 1;
+    overflow-y: auto; /* Permite rolagem dentro do formulário, se necessário */
+    display: flex;
+    flex-direction: column;
+}
+
 .form-group {
     margin-bottom: 15px;
+    flex-shrink: 0; /* Previne que os campos encolham */
 }
 
 .form-group label {
@@ -58,16 +74,17 @@ body {
     box-sizing: border-box;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #007bff;
-    outline: none;
+.form-group textarea {
+    resize: vertical; /* Permite apenas redimensionamento vertical */
+    max-width: 100%; /* Garante que o campo não ultrapasse o container */
+    flex-grow: 1; /* Faz o campo de texto crescer com o espaço disponível */
 }
 
 .form-actions {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    flex-shrink: 0; /* Previne que os botões encolham */
 }
 
 .form-actions button {

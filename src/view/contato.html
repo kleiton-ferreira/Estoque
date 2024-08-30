@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Contato</title>
     <link rel="stylesheet" href="../css/contato.css">
-    
 </head>
 <body>
     <div class="container">
@@ -14,7 +13,7 @@
             <h2>Contato</h2>
             <form action="https://api.staticforms.xyz/submit" method="post" target="hidden_iframe" onsubmit="displaySuccessMessage();">
                 <input type="hidden" name="accessKey" value="82f7cac5-5fab-4678-8951-d3cd73f521b0">
-                <input type="hidden" name="redirectTo">
+                <input type="hidden" name="redirectTo" value="enviado.html">
                 
                 <div class="form-group">
                     <label for="name">Nome:</label>
@@ -33,7 +32,6 @@
                     <button type="button" class="btn-secondary" onclick="window.location.href='../view/inventario.html'">Voltar ao Estoque</button>
                     <button type="submit" class="btn-primary">Enviar Mensagem</button>
                 </div>
-
             </form>
             <div id="successMessage" class="success-message" style="display: none;">
                 Mensagem enviada com sucesso!
@@ -44,6 +42,5 @@
     <iframe name="hidden_iframe" style="display:none;"></iframe>
 
     <script src="../js/contato.js"></script>
-
 </body>
 </html>
